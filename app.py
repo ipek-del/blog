@@ -19,9 +19,9 @@ def aladaglar():
 def bodrum():
     return render_template("bodrum.html")
 
-@app.route("/bruksel")
-def bruksel():
-    return render_template("bruksel.html")
+@app.route("/belcika")
+def belcika():
+    return render_template("belcika.html")
 
 @app.route("/erciyes")
 def erciyes():
