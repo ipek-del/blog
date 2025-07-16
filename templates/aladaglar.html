@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALADAĞLAR GEZİ REHBERİ</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('bloglar') }}">Blog</a></li>
+     
+      <li><a href="{{ url_for('galeri') }}">Galeri</a></li>
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-title">ALADAĞLAR GEZİ REHBERİ</h1>
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/aladaglar.jpg') }}" alt="ALADAĞLAR GEZİ REHBERİ Fotoğrafı" />
+    <h2>📍 Dağcılık Tutkunları İçin Cennet</h2>
+    <p>Aladağlar, Türkiye’nin en önemli dağcılık rotalarından biridir. Zirve tırmanışları, kamp alanları ve dağ evleriyle ünlüdür.</p>
+    <img src="{{ url_for('static', filename='images/demirkazik.jpg') }}" alt="Ek Görsel" />
+    <h2>🍽️ Nerede Yenir?</h2>
+    <ul>
+      <li><strong>Dağ Evleri</strong>: Demirkazık Köyü çevresindeki küçük pansiyonlar.</li>
+      <li><strong>Kamp Alanları</strong>: Çobanbeli ve Yedigöller çevresi kamp için ideal.</li>
+      <li><strong>Taşmekan</strong>: Seyhan Nehri kenarında yöresel yemekler.</li>    </ul>
+    <h2>🏨 Nerede Kalınır?</h2>
+    <ul>
+      <li><strong>Demirkazık Dağı</strong>: Dağcıların gözdesi.</li>
+      <li><strong>Yedigöller</strong>: Yüksek irtifada eşsiz doğa.</li>
+      <li><strong>Çımbar Boğazı</strong>: Teknik tırmanış rotaları.</li>    </ul>
+    <h2>📸 Gezilecek Yerler</h2>
+    <ul>
+      <li><strong>Tırmanış Malzemeleri</strong>: Tırmanış için teknik ekipman şart.</li>
+      <li><strong>Kampçılık</strong>: Yüksek irtifa için hazırlıklı olun.</li>
+      <li><strong>Rehber Eşliği</strong>: Tecrübeli rehber önerilir.</li>    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Dağları ve denizleri seven, dünyayı keşfetmek için yola çıkan bir gezginim. Bu blogda anılarımı ve tavsiyelerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>

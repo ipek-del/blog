@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="tr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travel Blog</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='bloglar-style.css') }}">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<h1><a class="logo-link" href="{{ url_for('index') }}">Travel Blog</a></h1>
+<ul>
+<li><a class="soft-link" href="{{ url_for('index') }}">Ana Sayfa</a></li>
+<li><a class="soft-link" href="{{ url_for('bloglar') }}">Blog</a></li>
+<li><a href="#hakkimda">Hakkımda</a></li>
+<li><a href="#iletisim">İletişim</a></li>
+</ul>
+<div class="search-bar">
+<input id="searchInput" placeholder="Ara..." type="text"/>
+<button id="searchButton"><img alt="Ara" src="https://www.svgrepo.com/show/7109/search.svg"/></button>
+</div>
+</nav>
+</header>
+<h1 class="blog-heading">Gezi Rotaları</h1>
+<div class="kategori-menu">
+<button class="kategori-btn" data-filter="all">Hepsi</button>
+<button class="kategori-btn" data-filter="dag">Dağlar</button>
+<button class="kategori-btn" data-filter="plaj">Plajlar</button>
+<button class="kategori-btn" data-filter="yurtdisi">Yurtdışı</button>
+</div>
+<div class="blog-container">
+<div class="blog-card" data-category="plaj">
+<img alt="Bodrum" src="{{ url_for('static', filename='images/bodrum2.jpg') }}"/>
+<div class="blog-tags">Türkiye · Bodrum · Tatil</div>
+<div class="blog-title">Bodrum’da Yaz Tatili</div>
+<div class="blog-desc">Bodrum, Muğla'nın önemli bir tatil beldesidir.</div>
+<a class="blog-button" href="{{ url_for('bodrum') }}">Daha Fazla »</a>
+</div>
+<div class="blog-card" data-category="dag">
+<img alt="Kaçkar Dağları" src="{{ url_for('static', filename='images/kackarlar.webp') }}"/>
+<div class="blog-tags">Türkiye · Kaçkarlar · Doğa</div>
+<div class="blog-title">Kaçkarlar’da Yürüyüş Keyfi</div>
+<div class="blog-desc">Kaçkar Dağları, doğaseverler için trekking rotaları sunar.</div>
+<a class="blog-button" href="{{ url_for('kackarlar') }}">Daha Fazla »</a>
+</div>
+<div class="blog-card" data-category="dag">
+<img alt="Verçenik" src="{{ url_for('static', filename='images/verçenik.jpeg') }}"/>
+<div class="blog-tags">Türkiye · Verçenik · Zirve</div>
+<div class="blog-title">Verçenik Zirvesine Yolculuk</div>
+<div class="blog-desc">Verçenik, Karadeniz’in yüksek dağlarından biridir.</div>
+<a class="blog-button" href="{{ url_for('vercenik') }}">Daha Fazla »</a>
+</div>
+<div class="blog-card" data-category="dag">
+<img alt="Aladaglar" src="{{ url_for('static', filename='images/aladaglar.jpg') }}"/>
+<div class="blog-tags">Türkiye · Aladağlar· Yürüyüş</div>
+<div class="blog-title">Aladağlarda zirveye doğru...</div>
+<div class="blog-desc">Aladağlar’da kamp kurmak özgürlüğün tanımıydı.</div>
+<a class="blog-button" href="{{ url_for('aladaglar') }}">Daha Fazla »</a>
+</div>
+<div class="blog-card" data-category="dag">
+<img alt="Erciyes" src="{{ url_for('static', filename='images/erciyes.png') }}"/>
+<div class="blog-tags">Türkiye ·Erciyes · Yürüyüş</div>
+<div class="blog-title">Erciyes'te kayak keyfi</div>
+<div class="blog-desc">Erciyes’te karla kaplı zirve nefes kesiciydi.</div>
+<a class="blog-button" href="{{ url_for('erciyes') }}">Daha Fazla »</a>
+</div>
+<div class="blog-card" data-category="yurtdisi">
+<img alt="Hollanda" src="{{ url_for('static', filename='images/hollanda.webp') }}"/>
+<div class="blog-tags">Avrupa· Hollanda · Tur</div>
+<div class="blog-title">Hollanda'nın kültürel mimarisi</div>
+<div class="blog-desc">Hollanda'da kanallar boyunca gezmek huzur vericiydi.</div>
+<a class="blog-button" href="{{ url_for('hollanda') }}">Daha Fazla »</a>
+</div>
+
+<!-- Fransa -->
+<div class="blog-card" data-category="yurtdisi">
+<img alt="Fransa" src="{{ url_for('static', filename='images/fransa.webp') }}"/>
+<div class="blog-tags">Avrupa · Tur</div>
+<div class="blog-title">Paris'te Gece Işıkları</div>
+<div class="blog-desc">
+    Geçen yaz Fransa'nın güneyinde lavanta tarlaları arasında yaptığım yolculuk, huzurun ta kendisiydi.
+  </div>
+<a class="blog-button" href="{{ url_for('fransa') }}">Daha Fazla »</a>
+</div>
+<!-- İtalya -->
+<div class="blog-card" data-category="yurtdisi">
+<img alt="İtalya" src="{{ url_for('static', filename='images/italya.jpg') }}"/>
+<div class="blog-tags">Avrupa · Tur</div>
+<div class="blog-title">İtalya'nın Eşsiz Güzellikleri</div>
+<div class="blog-desc">
+    İtalya'da bir dağ köyünde yediğim taze yapılmış pizzanın tadı hâlâ damağımda.
+  </div>
+<a class="blog-button" href="{{ url_for('italya') }}">Daha Fazla »</a>
+</div>
+<!-- İspanya -->
+<div class="blog-card" data-category="yurtdisi">
+<img alt="İspanya" src="{{ url_for('static', filename='images/ispanya.jpg') }}"/>
+<div class="blog-tags">Avrupa · Tur</div>
+<div class="blog-title">İspanya Güneşi</div>
+<div class="blog-desc">
+    Geçen yaz İspanya'nın güney kıyılarında güneşin batışını izlemek büyüleyiciydi.
+  </div>
+<a class="blog-button" href="{{ url_for('ispanya') }}">Daha Fazla »</a>
+</div>
+<!-- Belçika -->
+<div class="blog-card" data-category="yurtdisi">
+<img alt="Bruksel" src="images/brugge.jpg"/>
+<div class="blog-tags">Avrupa · Tur</div>
+<div class="blog-title">Brugge Masalı</div>
+<div class="blog-desc">
+    Belçika'nın tarihi şehirleri arasında dolaşmak, Orta Çağ’dan fırlamış gibi hissettirdi.
+  </div>
+<a class="blog-button" href="{{ url_for('bruksel') }}">Daha Fazla »</a>
+</div>
+</div>
+<footer class="footer">
+<div class="footer-bottom">
+<div class="about-me" id="hakkimda">
+<h3>Hakkımda</h3>
+<p>Ben İpek, doğa ve dağcılık tutkunu. Maceralarımı burada paylaşıyorum. 🌿</p>
+</div>
+<div class="subscribe">
+<h3>Bültene Katıl</h3>
+<input placeholder="E-posta adresiniz" type="email"/>
+<button>Abone Ol</button>
+</div>
+</div>
+</footer>
+<script src="search.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".kategori-btn");
+    const cards = document.querySelectorAll(".blog-card");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const filter = btn.getAttribute("data-filter");
+        cards.forEach(card => {
+          const category = card.getAttribute("data-category");
+          if (filter === "all" || filter === category) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+    // Arama butonu fonksiyonu
+    document.getElementById("searchButton").addEventListener("click", searchItems);
+    document.getElementById("searchInput").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") searchItems();
+    });
+  });
+</script>
+</body>
+</html>

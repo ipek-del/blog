@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1001" width="100%" height="auto">
+  <image href="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" x="0" y="0" height="1001" width="2000"/>
+  
+  <!-- Türkiye - Kaçkarlar -->
+  <a href="kackarlar.html">
+    <circle cx="1375" cy="370" r="12" fill="#1abc9c" />
+    <title>Kaçkarlar, Türkiye</title>
+  </a>
+
+  <!-- Türkiye - Verçenik -->
+  <a href="vercenik.html">
+    <circle cx="1370" cy="365" r="12" fill="#16a085" />
+    <title>Verçenik, Türkiye</title>
+  </a>
+
+  <!-- Türkiye - Erciyes -->
+  <a href="erciyes.html">
+    <circle cx="1360" cy="400" r="12" fill="#2980b9" />
+    <title>Erciyes, Türkiye</title>
+  </a>
+
+  <!-- Türkiye - Aladağlar -->
+  <a href="aladaglar.html">
+    <circle cx="1355" cy="410" r="12" fill="#8e44ad" />
+    <title>Aladağlar, Türkiye</title>
+  </a>
+
+  <!-- Türkiye - Bodrum -->
+  <a href="bodrum.html">
+    <circle cx="1320" cy="420" r="12" fill="#e67e22" />
+    <title>Bodrum, Türkiye</title>
+  </a>
+
+  <!-- İtalya -->
+  <a href="italya.html">
+    <circle cx="1240" cy="370" r="12" fill="#e74c3c" />
+    <title>İtalya</title>
+  </a>
+
+  <!-- Fransa -->
+  <a href="fransa.html">
+    <circle cx="1200" cy="350" r="12" fill="#c0392b" />
+    <title>Fransa</title>
+  </a>
+
+  <!-- Hollanda -->
+  <a href="hollanda.html">
+    <circle cx="1190" cy="320" r="12" fill="#d35400" />
+    <title>Hollanda</title>
+  </a>
+
+  <!-- Belçika -->
+  <a href="belcika.html">
+    <circle cx="1185" cy="330" r="12" fill="#2c3e50" />
+    <title>Belçika</title>
+  </a>
+</svg>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodrum Gezi Rehberi</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('bloglar') }}">Blog</a></li>
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">BODRUM GEZİ REHBERİ</h1>
+
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/bodrumkalesi.jpg') }}" alt="Bodrum Kalesi" />
+    
+    <h2>📍 Hangi İlçeyi Seçmeli?</h2>
+    <p><strong>Gümüşlük:</strong> Gün batımı, balık restoranları ve sanat galerileriyle meşhur.
+    <br><strong>Yalıkavak:</strong> Marina, lüks restoranlar ve hareketli gece hayatı ile öne çıkar.
+    <br><strong>Türkbükü:</strong> Ünlülerin uğrak noktası, plaj kulüpleri ve şık oteller.
+    <br><strong>Bodrum Merkez:</strong> Gece kulüpleri, tarihi Bodrum Kalesi ve Halikarnas Mozolesi'ne ev sahipliği yapar.</p>
+  <img src="{{ url_for('static', filename='images/gumusluk.jpg') }}" alt="Gümüşlük" />
+    <h2>🍽️ Nerede Yenir?</h2>
+    <ul>
+      <li><strong>Memedof:</strong> Gümüşlük’teki deniz ürünleriyle ünlü, samimi bir mekan.</li>
+      <li><strong>Sait Restaurant:</strong> Türkbükü’nde şık ve nezih, zengin meze menüsüyle tanınır.</li>
+      <li><strong>Orfoz:</strong> Bodrum Merkez’de şarap ve deniz mahsulleri eşleşmesi harika.</li>
+    </ul>
+
+    <h2>🏨 Nerede Kalınır?</h2>
+    <ul>
+      <li><strong>The Marmara Bodrum:</strong> Muhteşem manzara, özel tasarım ve sakinlik arayanlar için ideal.</li>
+      <li><strong>Maçakızı Hotel:</strong> Türkbükü’nün en ikonik otellerinden biri, lüks bir deneyim sunar.</li>
+      <li><strong>El Vino Hotel & Suites:</strong> Merkezi lokasyon, havuz başı romantik akşamlar.</li>
+    </ul>
+
+    <h2>📸 Gezilecek Yerler</h2>
+    <ul>
+      <li><strong>Bodrum Kalesi:</strong> Tarihi atmosferi ve Sualtı Arkeoloji Müzesi ile meşhur.</li>
+      <li><strong>Antik Tiyatro:</strong> M.Ö 4. yüzyıla dayanan bu tiyatroda konser bile izleyebilirsiniz.</li>
+      <li><strong>Halikarnas Mozolesi:</strong> Dünyanın yedi harikasından biri, kalıntıları hâlâ ziyaret edilebilir.</li>
+      <li><strong>Barlar Sokağı:</strong> Gece hayatının kalbinin attığı yer, özellikle genç gezginler için.</li>
+    </ul>
+
+    <img src="{{ url_for('static', filename='images/bodrummarina.jpg') }}" alt="Bodrum Marina" />
+
+    <p><strong>İpucu:</strong> Yaz sezonunda rezervasyonsuz gezmek zor olabilir, özellikle restoran ve plajlar için önceden plan yapmakta fayda var.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Dağları ve denizleri seven, dünyayı keşfetmek için yola çıkan bir gezginim. Bu blogda anılarımı ve tavsiyelerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>

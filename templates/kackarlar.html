@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaçkarlar Gezi Rehberi</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">KAÇKARLAR GEZİ REHBERİ</h1>
+
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/kackarlar.webp') }}" alt="KAÇKARLAR GEZİ REHBERİ" />
+    
+    <h2>🗻 Neresi Burası?</h2>
+    <p>Kaçkar Dağları, Karadeniz Bölgesi'nde yer alır ve doğa yürüyüşçüleri için cennet gibidir. Zengin flora ve fauna, buzul gölleri ve sisli zirveleri ile ünlüdür.</p>
+
+    <h2>🎒 Ne Yapılır?</h2>
+    <ul>
+      <li>Yayla yürüyüşleri (Ayder, Pokut, Gito yaylaları)</li>
+      <li>Fotoğrafçılık, doğa ve manzara severler için eşsiz kareler</li>
+      <li>Buzul göllere trekking</li>
+    </ul>
+
+    <h2>🍽️ Ne Yenir?</h2>
+    <ul>
+      <li>Kuymak (mıhlama)</li>
+      <li>Laz böreği</li>
+      <li>Tereyağlı alabalık</li>
+    </ul>
+        
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Dağları ve doğayı keşfetmeyi seven bir gezgin olarak deneyimlerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>

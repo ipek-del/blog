@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FRANSA GEZİ REHBERİ</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('bloglar') }}">Blog</a></li>
+  
+      
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-title">FRANSA GEZİ REHBERİ</h1>
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/paris.jpg') }}" alt="FRANSA GEZİ REHBERİ Fotoğrafı" />
+    <h2>📍 Hangi Şehirleri Görmeli?</h2>
+    <p>Paris, Nice, Lyon ve Strasbourg öne çıkan şehirlerdir. Paris'te Eyfel Kulesi, Louvre Müzesi; Nice'te Akdeniz sahilleri; Lyon'da gastronomi; Strasbourg'ta tarihi dokular sizi bekliyor.</p>
+    <img src="{{ url_for('static', filename='images/strasbourg.jpg') }}" alt="Ek Görsel" />
+    <h2>🍽️ Nerede Yenir?</h2>
+    <ul>
+      <li><strong>Le Jules Verne</strong>: Eyfel Kulesi'nde, eşsiz manzaralı Michelin yıldızlı restoran.</li>
+      <li><strong>La Mère Brazier</strong>: Lyon mutfağının en seçkin temsilcisi.</li>
+      <li><strong>Chez Janou</strong>: Marsilya'da yerel lezzetler, rahat atmosfer.</li>    </ul>
+    <h2>🏨 Nerede Kalınır?</h2>
+    <ul>
+      <li><strong>Hotel Le Meurice</strong>: Paris’te lüks, tarihi bir deneyim.</li>
+      <li><strong>Hotel Negresco</strong>: Nice sahilinde klasik tarzda bir konaklama.</li>
+      <li><strong>Cour du Corbeau</strong>: Strasbourg’un en romantik otellerinden.</li>    </ul>
+    <h2>📸 Gezilecek Yerler</h2>
+    <ul>
+      <li><strong>Eyfel Kulesi</strong>: Dünyanın en ikonik yapılarından biri.</li>
+      <li><strong>Mont Saint-Michel</strong>: Kıyıdaki manastır adası.</li>
+      <li><strong>Alsace Köyleri</strong>: Rengarenk evleriyle büyüleyici rotalar.</li>    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Dağları ve denizleri seven, dünyayı keşfetmek için yola çıkan bir gezginim. Bu blogda anılarımı ve tavsiyelerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>

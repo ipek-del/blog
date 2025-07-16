@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erciyes Dağı Gezi Rehberi</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('bloglar') }}">Blog</a></li>
+  
+      
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <h1 class="page-title">ERCİYES GEZİ REHBERİ</h1>
+
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/erciyes.jpg') }}" alt="ERCİYES GEZİ REHBERİ" />
+    
+    <h2>🏔️ Neresi Burası?</h2>
+    <p>Erciyes Dağı, Kayseri'de yer alır ve Türkiye'nin en önemli kış turizm merkezlerinden biridir. Aynı zamanda dağcılık ve kampçılık için de uygundur.</p>
+
+    <h2>⛷️ Neler Yapılır?</h2>
+    <ul>
+      <li>Kışın kayak ve snowboard</li>
+      <li>Yaz aylarında trekking ve kamp</li>
+      <li>Zirve tırmanışları (Prof rehber eşliğinde)</li>
+    </ul>
+
+    <h2>🍽️ Ne Yenir?</h2>
+    <ul>
+      <li>Kayseri mantısı</li>
+      <li>Pastırma ve sucuk</li>
+      <li>Yağlama</li>
+    </ul>
+        
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Dağları ve doğayı keşfetmeyi seven bir gezgin olarak deneyimlerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
