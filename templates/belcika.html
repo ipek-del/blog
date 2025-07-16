@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belçika Gezi Rehberi</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+    <ul>
+      <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+      <li><a href="{{ url_for('bloglar') }}">Blog</a></li>
+      <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+    </ul>
+  </nav>
+  <h1 class="page-title">BELÇİKA GEZİ REHBERİ</h1>
+  <section class="detail-section">
+    <img src="{{ url_for('static', filename='images/brugge.jpg') }}" alt="Belçika Brugge" />
+    <h2>📍 Brugge'de Neler Yapılır?</h2>
+    <p>Brugge, Belçika'nın en tarihi ve romantik şehirlerinden biridir. Orta Çağ'dan kalma yapıları, kanalları ve çikolataları ile ünlüdür.</p>
+    <h2>🍽️ Nerede Yenir?</h2>
+    <ul>
+      <li><strong>De Karmeliet</strong>: Michelin yıldızlı restoran.</li>
+      <li><strong>Chez Albert</strong>: Brugge waffle'ı ile ünlü.</li>
+      <li><strong>Den Dyver</strong>: Belçika birası ve yemekleri.</li>
+    </ul>
+    <h2>🏨 Nerede Kalınır?</h2>
+    <ul>
+      <li><strong>Hotel Dukes' Palace</strong>: Tarihi bir sarayda konaklama.</li>
+      <li><strong>Hotel de Orangerie</strong>: Kanal kenarında romantik bir otel.</li>
+      <li><strong>St. Christopher's Inn Hostel</strong>: Genç gezginler için uygun fiyatlı seçenek.</li>
+    </ul>
+    <h2>📸 Gezilecek Yerler</h2>
+    <ul>
+      <li><strong>Belfry Kulesi</strong>: Şehrin panoramik manzarası.</li>
+      <li><strong>Markt Meydanı</strong>: Tarihi meydan ve kafeler.</li>
+      <li><strong>Minnewater Parkı</strong>: Romantik yürüyüşler için ideal.</li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer-bottom">
+      <div class="about-me">
+        <h3>Hakkımda</h3>
+        <p>Belçika'yı ve Avrupa'yı keşfetmeyi seven bir gezgin olarak deneyimlerimi paylaşıyorum.</p>
+      </div>
+      <div class="subscribe">
+        <h3>Bültene Katıl</h3>
+        <input type="email" placeholder="E-posta adresiniz" />
+        <button>Kayıt Ol</button>
+      </div>
+    </div>
+    <p class="copyright">© 2025 Gezi Blogu - Tüm hakları saklıdır.</p>
+  </footer>
+</body>
+</html>
