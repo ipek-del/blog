@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='rotalar-style.css') }}">
 </head>
 <body>
+    <nav class="navbar">
+        <a href="{{ url_for('index') }}" class="logo-link">Travel Blog</a>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+            <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <main class="main-content">
             <h1>Vercenik Yaylası ve Zirvesi Rehberi</h1>
@@ -32,11 +39,11 @@
         <aside class="sidebar">
             <h3>Önerilen Diğer Rotalar</h3>
             <ul>
-         <li><a href="{{ url_for('aladaglar') }}">Aladağlar</a></li>
-        <li><a href="{{ url_for('kackarlar') }}">Kaçkarlar</a></li>
-        <li><a href="{{ url_for('erciyes') }}">Erciyes</a></li>
-        <ul>
+                <li><a href="{{ url_for('aladaglar') }}">Aladağlar</a></li>
+                <li><a href="{{ url_for('kackarlar') }}">Kaçkarlar</a></li>
+                <li><a href="{{ url_for('erciyes') }}">Erciyes</a></li>
+            </ul>
         </aside>
-    </div>          
+    </div>
 </body>
 </html>
