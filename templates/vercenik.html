@@ -13,37 +13,39 @@
             <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <main class="main-content">
-            <h1>Vercenik Yaylası ve Zirvesi Rehberi</h1>
-            <p>Vercenik Dağı, Kaçkarlar'ın en yüksek ikinci zirvesi olup, Rize'nin Çamlıhemşin ilçesi sınırlarında yer alır. Dağcılar için eşsiz bir rota sunar.</p>
+    <h1 class="page-title">VERCENİK YAYLASI VE ZİRVESİ REHBERİ</h1>
+    <section class="detail-section">
+        <h2>🗺️ Nasıl Gidilir?</h2>
+        <p>Rize merkezden Çamlıhemşin'e, oradan da Elevit Yaylası’na ulaşarak Vercenik Yaylası’na gidebilirsiniz. Yayladan zirveye tırmanış yürüyüşle yaklaşık 6-8 saat sürer.</p>
 
-            <h2>🗺️ Nasıl Gidilir?</h2>
-            <p>Rize merkezden Çamlıhemşin'e, oradan da Elevit Yaylası’na ulaşarak Vercenik Yaylası’na gidebilirsiniz. Yayladan zirveye tırmanış yürüyüşle yaklaşık 6-8 saat sürer.</p>
+        <h2>🧗 Rota ve Zorluk Derecesi</h2>
+        <p>Zirveye ulaşmak için teknik bilgi gerekebilir. Temmuz-Ağustos aylarında kar seviyesi düşer, bu nedenle yaz ayları en uygun zamandır. Orta–ileri seviye dağcılar için idealdir.</p>
 
-            <h2>🧗 Rota ve Zorluk Derecesi</h2>
-            <p>Zirveye ulaşmak için teknik bilgi gerekebilir. Temmuz-Ağustos aylarında kar seviyesi düşer, bu nedenle yaz ayları en uygun zamandır. Orta–ileri seviye dağcılar için idealdir.</p>
+        <h2>🏕️ Nerede Kalınır?</h2>
+        <p>Yaylada çadır kurulabilir. Elevit ve Trovit yaylalarında ise pansiyon seçenekleri vardır. Elektrik sınırlıdır; kamp için ekipmanınızı tam getirin.</p>
 
-            <h2>🏕️ Nerede Kalınır?</h2>
-            <p>Yaylada çadır kurulabilir. Elevit ve Trovit yaylalarında ise pansiyon seçenekleri vardır. Elektrik sınırlıdır; kamp için ekipmanınızı tam getirin.</p>
-
-            <h2>🎒 Yanınıza Almanız Gerekenler</h2>
-            <ul>
-                <li>Çadır ve uyku tulumu</li>
-                <li>Su geçirmez kıyafetler</li>
-                <li>Dağcılık botu</li>
-                <li>İlk yardım çantası</li>
-                <li>Güneş kremi ve gözlük</li>
-            </ul>
-        </main>
-        <aside class="sidebar">
-            <h3>Önerilen Diğer Rotalar</h3>
-            <ul>
-                <li><a href="{{ url_for('aladaglar') }}">Aladağlar</a></li>
-                <li><a href="{{ url_for('kackarlar') }}">Kaçkarlar</a></li>
-                <li><a href="{{ url_for('erciyes') }}">Erciyes</a></li>
-            </ul>
-        </aside>
-    </div>
+        <h2>🎒 Yanınıza Almanız Gerekenler</h2>
+        <ul>
+            <li>Çadır ve uyku tulumu</li>
+            <li>Su geçirmez kıyafetler</li>
+            <li>Dağcılık botu</li>
+            <li>İlk yardım çantası</li>
+            <li>Güneş kremi ve gözlük</li>
+        </ul>
+    </section>
+    <footer class="footer">
+      <div class="footer-bottom">
+        <div class="about-me">
+          <h3>Hakkımda</h3>
+          <p>Dağları ve doğayı keşfetmeyi seven bir gezgin olarak deneyimlerimi paylaşıyorum.</p>
+        </div>
+        <div class="subscribe">
+          <h3>Bültene Katıl</h3>
+          <input type="email" placeholder="E-posta adresiniz" />
+          <button>Kayıt Ol</button>
+        </div>
+      </div>
+      <p class="copyright">© 2025 Dağcılık Blog - Tüm hakları saklıdır.</p>
+    </footer>
 </body>
 </html>
