@@ -1,6 +1,8 @@
-from flask import Flask, render_template
+
+from flask import Flask, render_template, request, redirect, url_for, flash
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
+app.secret_key = 'gizli_anahtar'  # flash mesajları için
 
 @app.route("/")
 def index():
@@ -55,9 +57,20 @@ def vercenik():
 def hakkinda():
     return render_template("hakkinda.html")
 
-@app.route("/iletisim")
+
+# İletişim formu hem GET hem POST destekler, contact.html şablonunu kullanır
+@app.route("/iletisim", methods=["GET", "POST"])
 def iletisim():
-    return render_template("iletisim.html")
+    if request.method == "POST":
+        name = request.form.get("name")
+        email = request.form.get("email")
+        message = request.form.get("message")
+        print(f"Gelen iletişim formu:\nAd: {name}\nE-posta: {email}\nMesaj: {message}")
+        flash("Mesajınız başarıyla gönderildi! Teşekkür ederiz ❤️")
+        return redirect(url_for('iletisim'))
+    return render_template("contact.html")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=5000)
+
+

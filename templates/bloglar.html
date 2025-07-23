@@ -128,7 +128,7 @@
 </div>
 </div>
 </footer>
-<script src="search.js"></script>
+
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".kategori-btn");
@@ -146,11 +146,58 @@
         });
       });
     });
-    // Arama butonu fonksiyonu
-    document.getElementById("searchButton").addEventListener("click", searchItems);
-    document.getElementById("searchInput").addEventListener("keydown", function(e) {
-      if (e.key === "Enter") searchItems();
-    });
+
+    // Arama fonksiyonu (index.html ile aynı)
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+    const routes = {
+      "bodrum": "/bodrum",
+      "kackarlar": "/kackarlar",
+      "vercenik": "/vercenik",
+      "aladaglar": "/aladaglar",
+      "erciyes": "/erciyes",
+      "hollanda": "/hollanda",
+      "fransa": "/fransa",
+      "italya": "/italya",
+      "ispanya": "/ispanya",
+      "belcika": "/belcika"
+    };
+    function normalizeTurkish(str) {
+      return str
+        .toLowerCase()
+        .replace(/ç/g, 'c')
+        .replace(/ğ/g, 'g')
+        .replace(/ı/g, 'i')
+        .replace(/ö/g, 'o')
+        .replace(/ş/g, 's')
+        .replace(/ü/g, 'u');
+    }
+    function handleSearch() {
+      let keyword = normalizeTurkish(searchInput.value.trim());
+      if (routes[keyword]) {
+        window.location.href = routes[keyword];
+        return;
+      }
+      for (const key in routes) {
+        if (normalizeTurkish(key).includes(keyword)) {
+          window.location.href = routes[key];
+          return;
+        }
+      }
+      alert("Aradığınız içerik bulunamadı.");
+    }
+    if (searchInput && searchButton) {
+      searchButton.addEventListener("click", function(e) {
+        e.preventDefault();
+        handleSearch();
+      });
+      searchInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          handleSearch();
+        }
+      });
+    }
   });
 </script>
 </body>
